@@ -1,0 +1,69 @@
+cmake_minimum_required(VERSION 3.13)
+project(wtdbg2)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+
+add_executable(wtdbg2
+        scripts/best_kbm_hit.pl
+        scripts/best_minimap_hit.pl
+        scripts/dbm_index_dot.pl
+        scripts/dbm_index_fa.pl
+        scripts/dbm_read_dot.pl
+        scripts/dbm_read_fa.pl
+        scripts/fa2fq.pl
+        scripts/fa2tab.pl
+        scripts/first_n_bases.pl
+        scripts/first_n_seqs.pl
+        scripts/fq2fa.pl
+        scripts/hlcolor
+        scripts/longest_pacbio_subreads.pl
+        scripts/mmpoa.pl
+        scripts/mum_assess.sh
+        scripts/num_n50.pl
+        scripts/rename_fa.pl
+        scripts/rename_fq.pl
+        scripts/rev_seq.pl
+        scripts/runit.pl
+        scripts/sam2dbgcns.pl
+        scripts/seq_n50.pl
+        scripts/split_seqs_2.pl
+        scripts/wtdbg-dot2gfa.pl
+        bit2vec.h
+        bitsvec.h
+        bitvec.h
+        chararray.h
+        dagcns.h
+        dbgcns.h
+        dna.h
+        filereader.h
+        filewriter.h
+        general_graph.h
+        hashset.h
+        kbm.c
+        kbm.h
+        kbmpoa.h
+        ksw.c
+        ksw.h
+        kswx.h
+        LICENSE.txt
+        list.h
+        Makefile
+        mem_share.h
+        pgzf.c
+        pgzf.h
+        poacns.h
+        queue.h
+        README-ori.md
+        README.md
+        sort.h
+        thread.h
+        tripoa.h
+        txtplot.h
+        wtdbg-cns.c
+        wtdbg-graph.h
+        wtdbg.c
+        wtdbg.h
+        wtpoa-cns.c
+        wtpoa.h)
